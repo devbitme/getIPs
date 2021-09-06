@@ -1,0 +1,31 @@
+{
+    "name": "Get IPs",
+    "version": "1.0.0",
+    "description": "Get Server & Client IPs.",
+    "permissions": [
+        "clipboardWrite"
+    ],
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/logo/getips-16.png",
+            "32": "images/logo/getips-32.png",
+            "48": "images/logo/getips-48.png",
+            "128": "images/logo/getips-128.png"
+        },
+        "default_title": "Getting Started Example"
+    },
+    "icons": {
+        "16": "images/logo/getips-16.png",
+        "32": "images/logo/getips-32.png",
+        "48": "images/logo/getips-48.png",
+        "128": "images/logo/getips-128.png"
+    }
+}
