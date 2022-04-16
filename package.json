@@ -1,7 +1,16 @@
 {
     "name": "get-ips",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "description": "WebExtension to Get Server & Client IPs",
+    "license": "MPL-2.0",
+    "author": "Silbad",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Silbad/getIPs"
+    },
+    "bugs": {
+        "url": "https://github.com/Silbad/getIPs/issues"
+    },
     "scripts": {
         "code:lint": "eslint '**/**/*.{ts,tsx,svelte}'",
         "code:lint-fix": "eslint --fix '**/**/*.{ts,tsx,svelte}'",
@@ -19,7 +28,10 @@
         "test:unit": "jest",
         "test:unit-update-snapshot": "jest --updateSnapshot"
     },
-    "author": "Silbad",
+    "dependencies": {
+        "axios": "^0.26.1",
+        "ipaddr.js": "^2.0.1"
+    },
     "devDependencies": {
         "@babel/core": "^7.14.2",
         "@babel/preset-env": "^7.14.2",
@@ -42,49 +54,26 @@
         "eslint-plugin-import": "^2.23.0",
         "eslint-plugin-svelte3": "^3.2.0",
         "git-hooks-plus": "^1.0.1",
-        "jest": "^26.6.3",
-        "mini-css-extract-plugin": "^1.6.0",
-        "prettier": "^2.3.0",
-        "prettier-plugin-svelte": "^2.3.0",
+        "jest": "^27.5.1",
+        "mini-css-extract-plugin": "^2.6.0",
+        "prettier": "^2.6.2",
+        "prettier-plugin-svelte": "^2.7.0",
         "rimraf": "^3.0.2",
         "sinon": "^10.0.0",
         "stylelint": "^13.13.1",
         "stylelint-config-standard": "^22.0.0",
-        "svelte": "^3.31.2",
-        "svelte-check": "^1.0.46",
-        "svelte-jester": "^1.5.0",
-        "svelte-loader": "^3.0.0",
-        "svelte-preprocess": "^4.9.1",
+        "svelte": "^3.47.0",
+        "svelte-check": "^2.7.0",
+        "svelte-jester": "^2.3.2",
+        "svelte-loader": "^3.1.2",
+        "svelte-preprocess": "^4.10.6",
         "ts-jest": "^26.5.6",
         "ts-loader": "^8.2.0",
         "tslib": "^2.0.1",
         "typescript": "^4.2.4",
         "web-ext-types": "^3.2.1",
-        "webpack": "^5.16.0",
-        "webpack-cli": "^4.4.0",
-        "whatwg-fetch": "^3.0.0"
-    },
-    "keywords": [
-        "chrome extension",
-        "microsoft edge extension",
-        "firefox addon",
-        "web extension",
-        "typescript",
-        "ts",
-        "jest",
-        "sinon"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/davidnguyen179/web-extension-svelte-boilerplate.git"
-    },
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/davidnguyen179/web-extension-svelte-boilerplate/issues"
-    },
-    "homepage": "https://github.com/davidnguyen179/web-extension-svelte-boilerplate/blob/main/README.md",
-    "dependencies": {
-        "axios": "^0.21.3",
-        "public-ip": "^4.0.4"
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "whatwg-fetch": "^3.6.2"
     }
 }
