@@ -1,24 +1,6 @@
 {
-  "extends": "@tsconfig/svelte/tsconfig.json",
-  "include": [
-    "src/**/*",
-    "src/node_modules/**/*",
-    "./jest-setup.js"
-  ],
-  "exclude": [
-    "node_modules/*",
-  ],
+  "extends": "./.wxt/tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "isolatedModules": false,
-    "typeRoots": [
-      "node_modules/@types",
-    ],
-    "types": [
-      "jest",
-      "node",
-      "svelte",
-      "@testing-library/jest-dom"
-    ]
-  },
+    "useDefineForClassFields": true
+  }
 }

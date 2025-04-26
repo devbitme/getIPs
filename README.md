@@ -1,79 +1,49 @@
 # getIPs
 
-WebExtension to Get Server &amp; Client IPs
+WebExtension to Get Server & Client IPs.
+
+## Install
+
+`pnpm i`
 
 ## Development
 
-```bash
-npm i
-```
+### Firefox
 
-**Chrome**
+`pnpm dev`
 
-```bash
-npm run app:chrome-dev
-```
+### Chrome
 
-**Edge**
-
-```bash
-npm run app:edge-dev
-```
-
-**Firefox**
-
-```bash
-npm run app:firefox-dev
-```
+`pnpm dev:chrome`
 
 ## Production
 
-```bash
-npm i
-```
+### Firefox
 
-```bash
-npm run app:chrome
-```
+`pnpm build`
 
-**Edge**
+### Chrome
 
-```bash
-npm run app:edge
-```
+`pnpm build:chrome`
 
-**Firefox**
+## Archive
 
-```bash
-npm run app:firefox
-```
+### Firefox
 
-## Load package to browsers
+`pnpm zip`
 
-**Chrome**
+### Chrome
 
-1. Go to the browser's URL address bar
-2. Enter `chrome://extensions/`
-3. Switch to "**Developer mode**"
-4. Load extension by clicking "**Load unpacked**"
-5. Browse to `dist/` in source code
-6. Done!
+`pnpm zip:chrome`
 
-Check here for more detail: [https://developer.chrome.com/extensions/getstarted](https://developer.chrome.com/extensions/getstarted)
+## Thanks
 
-**Edge**
+- [WXT](https://wxt.dev/)
+- [Svelte](https://svelte.dev/)
+- [Vite](https://vite.dev/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [MDN WebExtensions](https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions)
 
-1. Go to the browser's URL address bar
-2. Enter `edge://extensions/`
-3. Turn on `Developer mode`
-4. Load extension by clicking "**Load unpacked**"
-5. Browse to `dist/` in source code
-6. Done!
+## About us
 
-**Firefox**
-
-1. Go to the browser's URL address bar
-2. Enter `about:debugging#/runtime/this-firefox`
-3. Click **Load Temporary Add-on...**
-4. Browse to your `manifest.json` & click **Open**
-5. Done!
+- [devbit.me](https://devbit.me/)
